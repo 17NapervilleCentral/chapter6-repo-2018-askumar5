@@ -98,7 +98,7 @@ public static void main (String[] args)
        for(int i =0; i<num.length; i++)
        {
             num[i] = gen.nextInt(100)-50;
-            if ()
+            //if ()
         }
 /*
        for(int i =0; i<num.length; i++)
@@ -106,7 +106,7 @@ public static void main (String[] args)
             System.out.println( num[i] );
         }
         System.out.println("-----------");
-/*
+/**/
         int look = 42;
 
         System.out.println(Searches.linearSearch(num,look)  );
@@ -114,18 +114,18 @@ public static void main (String[] args)
         System.out.println(Searches.binarySearch(num,look)  );
 
 
-
+/*
         //for each loop
-/**/
+
 
         useful.getOdd(num,oddnum);
-
+/**
         for (int s : oddnum)
         {
             System.out.println(s);
         }
         System.out.print("---------------------------------evens");
-/**/
+/**
         evennum = useful.getEven(num);
         for (int s : evennum)
         {

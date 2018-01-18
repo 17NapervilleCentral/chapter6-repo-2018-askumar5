@@ -11,6 +11,8 @@ public class Searches
    //  a linear search. The index where the element was found is
    //  returned, or -1 if the element is not found.
    //-----------------------------------------------------------------
+   //linear search will be on the test
+   //one reason linear search is used is b/c list is not sorted/not ordered
    public static int linearSearch (int[] numbers, int key)
    {
       for (int index = 0; index < numbers.length; index++)
@@ -25,6 +27,7 @@ public class Searches
    //  returned, or -1 if the element is not found.
    //  NOTE: The array must be sorted!
    //-----------------------------------------------------------------
+   //Test Question: what is the worse case scenario for how many times I have to search?
    public static int binarySearch (int[] numbers, int key)
    {
       int low = 0, high = numbers.length-1, middle = (low + high) / 2;
