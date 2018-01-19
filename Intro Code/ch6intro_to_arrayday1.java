@@ -197,8 +197,23 @@ public static void main (String[] args)
 
  */
 
+/*
+        //Initializer list
+        int test [] = new int [1,2,2,2,4,5,6,7,8,9];
+        int [] test2 = new int [1,2,3,4,5,6,7,8,9,10];
+        
+        String[] names = ["Tracy", "Ben", "Cory", "Taylor", "Lizzy"];
+        
+        mathy useful = new math();
+        int x = 50;
+        int[] num = new int[20];
+        int[] values = new int[MAX];
+        //.length not a method public data
+        int[oddnum] = new int[num.length];
+        int[] evennum = new int[num.length];
+        int[] newnum = new int[num.length];
 
- /*
+ /**/
        //make a two dementional array
        int [][] table = new int [5][10];
 
@@ -219,7 +234,7 @@ public static void main (String[] args)
 
     // make a 2d array with an iniitalizer list.
     //print the length of row and col
-/*
+/**/
     int [][] scores = { {1,2,3},//6
                         {2,2,3},//7
                         {3,2,3},//8
@@ -228,9 +243,11 @@ public static void main (String[] args)
 
     System.out.println(scores[0].length+"col");
     System.out.println(scores.length+"row");
+    
+/**/
 
     System.out.print("The sum of this array is" + mathy.sum2DArray(scores));
-
+/*
     System.out.print(mathy.sumOneRow2DArray(scores, 3));
     System.out.print(mathy.sumOneRow2DArray(scores[3]));
 
