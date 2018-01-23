@@ -243,21 +243,52 @@ public class mathy
         return array;
 
    }
+   
+   public static void swapFirstandLast(int[] array)
+   {
+       int first = 0;
+       int last = array.length;
+       array[0] = array[last-1];
+       array[last-1] = array[0];
+       
+   }
+   
+   public static void shiftRight(int[] array)
+   {
+       //shifts all but last element
+       for (int i = 0; i < 9; i++)
+       {
+           array[i+1] = array[i];
+           
+       }
+       int last = array.length;
+       array[0] = array[last-1];
+   }
 
+   public static void EvenToZero(int[] array)
+   {
+       for (int i = 0; i <= 9; i++)
+       {
+           if (array[i] % 2 == 0)
+               array[i] = 0;
+       }
+       
+   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+   public static void TwoNeighbors(int[] array)
+   {
+       for (int i = 1; i < 9; i++)
+       {
+           
+           int neighbor1 = array[i-1];
+           int neighbor2 = array[i+1];
+           if (neighbor1 > neighbor2)
+               array[i] = neighbor1;
+           else
+               array[i] = neighbor2;
+           
+        }
+   }
 
 
 }//end of class
