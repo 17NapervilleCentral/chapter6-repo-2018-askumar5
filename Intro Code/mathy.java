@@ -234,7 +234,7 @@ public class mathy
        System.out.println(temp.length +"-" );
 
         //copy all the values over to new array
-       for (int i = 0; i < array.length; i++)
+       for (int i = 0; i < array.length -1; i++)
             temp[i] = array[i];
 
         //old array changes reference to new larger array
@@ -256,7 +256,7 @@ public class mathy
    public static void shiftRight(int[] array)
    {
        //shifts all but last element
-       for (int i = 0; i < 9; i++)
+       for (int i = 0; i < array.length -1; i++)
        {
            array[i+1] = array[i];
            
@@ -267,7 +267,7 @@ public class mathy
 
    public static void EvenToZero(int[] array)
    {
-       for (int i = 0; i <= 9; i++)
+       for (int i = 0; i <= array.length -1; i++)
        {
            if (array[i] % 2 == 0)
                array[i] = 0;
@@ -277,9 +277,8 @@ public class mathy
 
    public static void TwoNeighbors(int[] array)
    {
-       for (int i = 1; i < 9; i++)
+       for (int i = 1; i < array.length -1; i++)
        {
-           
            int neighbor1 = array[i-1];
            int neighbor2 = array[i+1];
            if (neighbor1 > neighbor2)
@@ -289,6 +288,70 @@ public class mathy
            
         }
    }
-
-
+   
+   public static void MiddleRemoval(int[] array)
+   {
+       int length = array.length;
+       if ((length + 1) % 2 == 0)
+       {
+           for (int i = ((length+1)/2); i < (length +1); i++)
+           {
+               array[i+1] = array[i];
+            }
+       }
+       else
+       {
+           //sets i to middle element's index
+           for (int i = ((length+1)/2); i < (length +1); i++)
+           {
+               array[i + 1] = array[1];
+            }
+        }
+    }
+   /*
+    public static void EvenToFront(int[] array)
+    {
+        for (int i = 0; i <= array.length -1; i++)
+       {
+           if (array[i] % 2 == 0)
+               array[i] = 0;
+       }
+    }
+    */
+   
+   /*
+   public static void SecondLargest(int[] array)
+   {
+       int max = array[0];
+       for (int i = 1; i < array.length - 1; i++)
+       {
+           if (array[i] > max)
+                max = array[i];
+           
+           for (int i = 0; i < array.length - 1; i++)
+           {
+               closest = max - 100;
+               
+            }
+       }
+   }
+   */
+  
+   public static boolean IsInOrder(int[] array)
+   {
+       for (int i = 0; i < array.length; i++)
+       {
+        }
+       
+        return true;
+   }
+   
+   
+   
+   
+   
+   
+   
+   
+   
 }//end of class

@@ -19,6 +19,11 @@ comment15.params=array
 comment15.target=void\ EvenToZero(int[])
 comment16.params=array
 comment16.target=void\ TwoNeighbors(int[])
+comment17.params=array
+comment17.target=void\ MiddleRemoval(int[])
+comment18.params=array
+comment18.target=boolean\ IsInOrder(int[])
+comment18.text=\r\n\ \ \ public\ static\ void\ SecondLargest(int[]\ array)\r\n\ \ \ {\r\n\ \ \ \ \ \ \ int\ max\ \=\ array[0];\r\n\ \ \ \ \ \ \ for\ (int\ i\ \=\ 1;\ i\ <\ array.length\ -\ 1;\ i++)\r\n\ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ if\ (array[i]\ >\ max)\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ max\ \=\ array[i];\r\n\ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ for\ (int\ i\ \=\ 0;\ i\ <\ array.length\ -\ 1;\ i++)\r\n\ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ closest\ \=\ max\ -\ 100;\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ }\r\n\ \ \ }\r\n
 comment2.params=x
 comment2.target=int\ abs(int)
 comment2.text=\r\n\ \ \ \ \ \ \ \ take\ the\ absoulute\ value\ of\ the\ number\r\n\ \ \ \ \ \ \ \ @param\ int\ value\r\n\ \ \ \ \ \ \ \ @return\ absoulute\ value\ of\ number\r\n
@@ -39,4 +44,4 @@ comment8.params=scores
 comment8.target=int\ sum2DArray(int[][])
 comment9.params=row
 comment9.target=int\ sumOneRow2DArray(int)
-numComments=17
+numComments=19
