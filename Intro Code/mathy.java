@@ -67,9 +67,6 @@ public class mathy
 
         }
 
-
-
-
     }//end of getOdd
 
 

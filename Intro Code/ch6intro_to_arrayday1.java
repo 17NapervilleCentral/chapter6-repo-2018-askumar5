@@ -21,7 +21,7 @@ public class ch6intro_to_arrayday1
 public static void main (String[] args)
 {
     //ArrayList notes
-/*
+/**/
     // <> indicates the type of ArrayList
     ArrayList <String> farm = new ArrayList<>();
 
@@ -40,18 +40,38 @@ public static void main (String[] args)
     farm.add("pig");farm.add("pig");farm.add("pig");
 
     System.out.println(farm);
-
+    
+    System.out.println(farm.get(25).equals("duck"));
+    
+/**/
     int count = 0;
     for (int i = 0; i<farm.size();i++)
     {
         if(farm.get(i).equals("chicken"))
             count++;
-
+        /*
         if (farm.get(i).equals("chicken"))
+        {
             farm.remove(i);
-
-
+            i--;
+        }
+        */
+       
+        
+        
+        
     }
+    
+    for (int i = farm.size()-1; i > 0; i--)
+    {
+        if (farm.get(i).equals("chicken"))
+        {
+            farm.remove(i);
+        }
+        
+        else
+            i--;
+        }
 
     System.out.println("There are " + count+ " chickens");
 
@@ -62,7 +82,7 @@ public static void main (String[] args)
     //ArrayList <int> list1 = new ArrayList<>();// no primitive data types
 
     ArrayList <Integer> list1 = new ArrayList<>();
-
+/*
     ArrayList <CD> mycds = new ArrayList<>();
 
     //for(int i = 0; i<3; i++)
@@ -106,7 +126,7 @@ public static void main (String[] args)
             System.out.println( num[i] );
         }
         System.out.println("-----------");
-/**/
+/*
         int look = 42;
 
         System.out.println(Searches.linearSearch(num,look)  );
@@ -213,7 +233,7 @@ public static void main (String[] args)
         int[] evennum = new int[num.length];
         int[] newnum = new int[num.length];
 
- /**/
+ /*
        //make a two dementional array
        int [][] table = new int [5][10];
 
