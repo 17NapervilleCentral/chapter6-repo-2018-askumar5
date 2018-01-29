@@ -42,6 +42,13 @@ public static void main (String[] args)
     System.out.println(farm);
     
     System.out.println(farm.get(25).equals("duck"));
+    farm.add(0, "Emu");
+    System.out.print(farm);
+    System.out.println("\n");
+    
+    String animal = farm.set(0, "Owl");
+    System.out.println(farm.get(0) + "+");
+    System.out.println(animal + "-");
     
 /**/
     int count = 0;
@@ -77,7 +84,29 @@ public static void main (String[] args)
 
     System.out.println(farm);
 
-    ArrayList <String> list = new ArrayList<>();
+    //LOTTERY
+    ArrayList <Integer> list = new ArrayList<>(54);
+    int x = 0;
+    while (x <= 10)
+    {
+        for (int i = 1; i < 55; i++)
+        {
+            list.add(i);
+        }
+        
+        //array of winning lotto numbers
+        int [] winna = new int[6];
+        for (int i = 0; i < 6; i++)
+        {
+            Random gen = new Random();
+            int lotto_num = gen.nextInt(53) + 1;
+            list.remove(lotto_num);
+            
+            //adds number to list "winna"
+            winna[i] = lotto_num;
+        }
+        System.out.println(winna);
+    }
 
     //ArrayList <int> list1 = new ArrayList<>();// no primitive data types
 
