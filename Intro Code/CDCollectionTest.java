@@ -24,7 +24,7 @@ public class CDCollectionTest
 
 	//displays the entire list of CD's "Artist"--"CD"--"Number of Tracks"
 	// use printf to format output, does not return a string like toString
-    db.print();
+    //db.print();
 
     System.out.println(db.cheapest(5));
     System.out.println(db.cheapest(4));

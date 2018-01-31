@@ -4,6 +4,9 @@
 //  Represents a collection of compact discs.
 //********************************************************************
 
+
+//SAAGAR AND ARJUN
+
 import java.text.NumberFormat;
 import java.util.ArrayList;
 public class CDCollection
@@ -29,12 +32,10 @@ public class CDCollection
       rating.
    *  @param
    */
-   public void addCD (String title, String artist, double cost,
-                      int tracks, int rating)
+   public void addCD (CD cd1)
    {// must rewrite this method!!!!!!!!!
-      CD cd1 = new CD (title, artist, cost, tracks, rating);
       collection.add(cd1);
-      totalCost += cost;
+      totalCost += cd1.getPrice();
       count++;
       
       for (int i = 0; i < collection.size(); i++)
@@ -93,20 +94,41 @@ public class CDCollection
    */
    public CD removeCD (String name)
    {
+       CD cd1;// = new CD("Sorry, there's no CD by this name", " ", 1,1,1);
        for (int i = 0; i < collection.size(); i++)
        {
-           if (collection.get(i).getName() == name)
+           if (collection.get(i).getName().equals(name))
            {
-                CD cd1 = collection.get(i);
-                collection.remove(i);
+                //cd1 = collection.get(i);
+                cd1= collection.remove(i);
+                return cd1;
             }
+            /*
            else
            {
-                CD cd1;
-              
+                cd1 = new CD("Sorry, there's no CD by this name", " ", 1,1,1);
             }
+            /**/
         }
+       return new CD ("Sorry, there's no CD by this name", " ", 1,1,1); //null
     }
+   public ArrayList<CD> choices(double low, double high, double rating)
+   {
+       ArrayList <CD> CDinstances = new ArrayList<>();
+       
+       for (int i=0; i<collection.size();i++)
+       {
+           if (collection.get(i).getPrice() >= low && collection.get(i).getPrice()<=high)
+           {
+               if (collection.get(i).getRating() == rating)
+               {
+                   CDinstances.add(collection.get(i));
+                }
+            }
+       }
+    
+    return CDinstances;
+   }
    //-----------------------------------------------------------------
    //  Doubles the size of the collection by creating a larger array
    //  and copying the existing collection into it.
