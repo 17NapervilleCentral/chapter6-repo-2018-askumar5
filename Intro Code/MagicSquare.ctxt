@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=row
+comment0.target=int\ sumOneRow2DArray(int)
+comment1.params=row
+comment1.target=int\ sumOneCol2DArray(int)
+numComments=2
