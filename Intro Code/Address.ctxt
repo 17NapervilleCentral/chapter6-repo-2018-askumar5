@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Address()
+comment1.params=street\ town\ st\ zip
+comment1.target=Address(java.lang.String,\ java.lang.String,\ java.lang.String,\ int)
+comment2.params=other
+comment2.target=int\ compareTo(java.lang.Object)
+comment3.params=
+comment3.target=int\ hash()
+comment3.text=\r\n\ \t\tcreates\ a\ hash\ number\r\n\ \t\tarray\ size\ must\ be\ size\ of\ hash\ table\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5
