@@ -47,7 +47,7 @@ public class MagicSquare
         //checks each row
         for (int r = 0; r <= magic.length; r++)
         {
-            if (magic.addRow(r) == magicNum)
+            if (addRow(r) == magicNum)
                 numRows++;
         }
         if (numRows == magic.length)
@@ -56,14 +56,17 @@ public class MagicSquare
         //checks each column
         for (int c = 0; c <= magic.length; c++)
         {
-            if (magic.addColumn(c) == magicNum)
+            if (addColumn(c) == magicNum)
                 numCols++;
         }
         if (numCols == magic.length)
             ToF_col = true;
         
+        //isDiagonal
+        boolean ToF_diag = isDiagonal();
+            
         //if both each row and each col all add up to magic num
-        if (ToF_col == true && ToF_row == true)
+        if (ToF_col == true && ToF_row == true && ToF_diag == true)
             ToF = true;
         
         return ToF;
@@ -73,7 +76,7 @@ public class MagicSquare
      * adds up the numbers in each row
      * @return an int, total of the row
      */
-    public int addRow(int row)
+    public int addRow (int row)
     {   int total = 0;
         for (int c = 0; c <= magic[row].length; c++)
         {
@@ -88,7 +91,7 @@ public class MagicSquare
      * adds up the numbers in each column
      * @return int, total of the column
      */
-    public int addColumn(int col)
+    public int addColumn (int col)
     {
         int total = 0;
         for (int r = 0; r < magic.length; r++)
@@ -99,5 +102,41 @@ public class MagicSquare
         return total;
         
     }
+    
+    public boolean isDiagonal ()
+    {
+        int total = 0;
+        for (int c = 0, r = (magic.length - 1); r < magic.length; r--, c++)
+        {
+            total += magic[r][c];
+        }
+        
+        int total2 = 0;
+        for (int r = 0; r < magic.length; r++)
+        {
+            total2 += magic[r][r];
+        }
+        
+        boolean ToF_diag = false;
+        
+        int magicNum = getMagicNum();
+        
+        if (total == total2 && total2 == magicNum)
+            ToF_diag = true;
+        
+        return ToF_diag;
+        
+    }
    
+    public String toString ()
+    {
+        String output =  " ";
+        
+        if (isMagic() == true)
+            output = "This is a magic square.";
+        else
+            output = "This ain't a magic square.";
+        
+        return output;
+    }
 }
