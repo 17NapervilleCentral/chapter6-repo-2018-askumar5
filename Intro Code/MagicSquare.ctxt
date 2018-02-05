@@ -1,6 +1,13 @@
 #BlueJ class context
-comment0.params=row
-comment0.target=int\ sumOneRow2DArray(int)
-comment1.params=row
-comment1.target=int\ sumOneCol2DArray(int)
-numComments=2
+comment0.params=array
+comment0.target=MagicSquare(int[][])
+comment1.params=
+comment1.target=int\ getMagicNum()
+comment2.params=
+comment2.target=boolean\ isMagic()
+comment2.text=\r\n\ adds\ up\ each\ row/column\ to\ check\ if\ equal\ to\ magic\ number\r\n\ @return\ boolean,\ if\ rows\ and\ columns\ \=\ magic\ number\r\n
+comment3.params=row
+comment3.target=int\ addRow(int)
+comment4.params=col
+comment4.target=int\ addColumn(int)
+numComments=5
