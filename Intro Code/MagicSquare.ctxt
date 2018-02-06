@@ -1,20 +1,23 @@
 #BlueJ class context
 comment0.params=array
 comment0.target=MagicSquare(int[][])
+comment0.text=\r\n\ this\ is\ the\ constructor\r\n\ @param\ array\r\n
 comment1.params=
 comment1.target=int\ getMagicNum()
-comment1.text=\r\n\ adds\ up\ the\ first\ row\ in\ the\ array\ to\ get\ the\ magic\ number\ of\ the\ array\ that\ the\ rest\ of\ the\ rows/columns\ should\ folllow\r\n\ @return\ int,\ which\ is\ the\ magic\ num\r\n
+comment1.text=\r\n\ adds\ up\ the\ first\ row\ in\ the\ array\ to\ get\ the\ magic\ number\ of\ the\ array\ that\ the\ rest\ of\ the\ rows/columns\ should\ folllow\r\n\ @return\ int,\ which\ is\ the\ magic\ num\r\n\ @param\ none\r\n
 comment2.params=
 comment2.target=boolean\ isMagic()
-comment2.text=\r\n\ adds\ up\ each\ row/column\ to\ check\ if\ equal\ to\ magic\ number\r\n\ @return\ boolean,\ if\ rows\ and\ columns\ \=\ magic\ number\r\n
+comment2.text=\r\n\ adds\ up\ each\ row/column\ to\ check\ if\ equal\ to\ magic\ number\r\n\ @return\ boolean,\ if\ rows\ and\ columns\ \=\ magic\ number\r\n\ @param\ none\r\n
 comment3.params=row
 comment3.target=int\ addRow(int)
-comment3.text=\r\n\ adds\ up\ the\ numbers\ in\ each\ row\r\n\ @return\ an\ int,\ total\ of\ the\ row\r\n
+comment3.text=\r\n\ adds\ up\ the\ numbers\ in\ each\ row\r\n\ @return\ an\ int,\ total\ of\ the\ row\r\n\ @param\ int,\ the\ row\ number\r\n
 comment4.params=col
 comment4.target=int\ addColumn(int)
-comment4.text=\r\n\ adds\ up\ the\ numbers\ in\ each\ column\r\n\ @return\ int,\ total\ of\ the\ column\r\n
+comment4.text=\r\n\ adds\ up\ the\ numbers\ in\ each\ column\r\n\ @return\ int,\ total\ of\ the\ column\r\n\ @param\ int,\ the\ column\ number\r\n
 comment5.params=
 comment5.target=boolean\ isDiagonal()
+comment5.text=\r\n\ this\ makes\ sure\ that\ the\ magic\ square's\ diagonals\ add\ up\ to\ the\ magic\ number\r\n\ @return\ boolean,\ true\ or\ false\ whether\ diagonals\ add\ up\ to\ magic\ numba\r\n
 comment6.params=
 comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ prints\ out\ if\ it's\ a\ magic\ square,\ and\ the\ magic\ number\ (if\ it\ is\ a\ magic\ square)\r\n\ @return\ string\r\n
 numComments=7

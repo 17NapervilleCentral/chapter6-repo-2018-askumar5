@@ -51,7 +51,11 @@ public class MagicSquareTest
     // print the same results for square2 and square3
 
     MagicSquare mag = new MagicSquare(square);
+    MagicSquare mag2 = new MagicSquare(square1);
+    MagicSquare mag3 = new MagicSquare(square2);
     System.out.println(mag);
+    System.out.println(mag2);
+    System.out.println(mag3);
 
 }//end of main
 }// end of class
