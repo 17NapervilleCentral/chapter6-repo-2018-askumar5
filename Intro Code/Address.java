@@ -56,17 +56,12 @@ public class Address implements Comparable
 				factor +=city.charAt(i);
 
 		hash_num *= factor;
-
-
-
-
+		
+		hash_num += zipCode;
 
 
 		return hash_num;
       }
-
-
-
 
    //-----------------------------------------------------------------
    //  Returns this Address object as a string.

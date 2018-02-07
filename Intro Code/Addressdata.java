@@ -46,7 +46,7 @@ Address Tom   = new Address ("916 Elm Street","Flossmoor", "IL", 60148);
 
 	  Address [] hash_array = new Address[3*contacts.length];
 
-	  for( int i = 0; i<contacts.length;i++)
+	  for( int i = 0; i < contacts.length; i++)
 	  {
 		  hash_array[contacts[i].hash()%30] = contacts[i];
 
