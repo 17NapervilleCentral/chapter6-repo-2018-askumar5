@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Purse()
+comment0.text=Coin\ c1\ \=\ new\ Coin('q');\r\n\t\ //\ wallet.add(c1);\r\n\t\ \ wallet.add(Coin\ c2\ \=\ new\ Coin('n'));\r\n\t\ \ wallet.add(Coin\ c3\ \=\ new\ Coin('d'));\r\n\t\ \ wallet.add(Coin\ c4\ \=\ new\ Coin('p'));\r\n\t\ \ wallet.add(Coin\ c5\ \=\ new\ Coin('p'));\r\n\t\ \ wallet.add(Coin\ c6\ \=\ new\ Coin('p'));\r\n\t\ \ wallet.add(Coin\ c7\ \=\ new\ Coin('p'));\r\n\t\ \ wallet.add(Coin\ c8\ \=\ new\ Coin('p'));\r\n\t\ \ wallet.add(Coin\ c9\ \=\ new\ Coin('q'));\r\n\t\ \ wallet.add(Coin\ c10\ \=\ new\ Coin('q'));\r\n\t\ \ wallet.add(Coin\ c11\ \=\ new\ Coin('d'));\r\n\t\ \ wallet.add(Coin\ c12\ \=\ new\ Coin('n'));\r\n
+comment1.params=acoin
+comment1.target=Purse(Coin)
+comment2.params=acoin
+comment2.target=void\ add(Coin)
+comment2.text=\ precondition\:\ Coin\ will\ be\ initialized\ (value\ and\ name)\ correctly\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ each\ variable\ will\ have\ a\ value\r\n\ \ \ \ \ \ \ \t\ \ postcondition\:\ Puts\ the\ Coin\ into\ the\ array\ list\ change\r\n
+comment3.params=
+comment3.target=double\ getTotal()
+comment3.text=\ Returns\ the\ total\ value\ of\ the\ coins\ in\ the\ array\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ list\ change\r\n\ \ \ \ \ \ \t\t@return\ ???\r\n
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment4.text=\r\n\ \ Returns\ the\ all\ objects\ in\ the\ array\ list\ as\ Strings\r\n
+numComments=5

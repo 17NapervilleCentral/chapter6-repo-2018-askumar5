@@ -162,28 +162,34 @@ public class Account implements Comparable
             return 0;
     }
 
-
-    public int hash_code()
+    /**
+     * This calculates the hash number. First, the number is set to one and then multiplied by each number of each character in the Account's name.
+     * Note: Absolute value of the number is taken to avoid a negative hash number.
+     * Next, the account number is added to the number.
+     * Finally, one fifth of the balance is added to the number. This is the final hash_num
+     */
+    public int hash()
     {
         int hash_num = 1;
         for (int i = 0; i < name.length(); i++)
         {
             hash_num *= name.charAt(i);
         }
+        hash_num = Math.abs(hash_num); //absolute value taken
         
-        int temp = 0;
-        temp += acctNumber;
-        
+        hash_num += acctNumber; //add the account number
+        int num = (int) balance / 5;
+        hash_num += num;
+        /*
         for (int i = 0; i < (balance / 5); i++)
         {
-            temp += i;
+            hash_num += i;
         }
+*/
+        acctNumber = hash_num % 100000000; //makes the account an 8-digit version of the hash_number
         
-        hash_num += temp;
-
         return hash_num;
     }
 
 
 }
-

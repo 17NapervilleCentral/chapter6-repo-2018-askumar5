@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=name\ value
+comment0.target=Coin(char,\ double)
+comment0.text=-----------------------------------------------------------------\r\n\ \ Sets\ up\ the\ coin\ by\ flipping\ it\ initially.\r\n
+comment1.params=
+comment1.target=java.lang.String\ getName()
+comment1.text=\r\n\ finds\ out\ what\ the\ name\ of\ the\ coin\ is\r\n
+numComments=2
