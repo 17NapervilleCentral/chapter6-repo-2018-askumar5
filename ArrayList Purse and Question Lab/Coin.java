@@ -3,6 +3,7 @@
 *
 *  Represents a coin with two sides that can be flipped.
 */
+//Arjun Kumar
 
 import java.util.Random;
 
