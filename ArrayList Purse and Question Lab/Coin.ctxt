@@ -5,4 +5,6 @@ comment0.text=-----------------------------------------------------------------\
 comment1.params=
 comment1.target=java.lang.String\ getName()
 comment1.text=\r\n\ finds\ out\ what\ the\ name\ of\ the\ coin\ is\r\n
-numComments=2
+comment2.params=
+comment2.target=java.lang.String\ toString()
+numComments=3

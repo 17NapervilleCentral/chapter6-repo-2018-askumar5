@@ -122,7 +122,7 @@ public class Account implements Comparable
    //-----------------------------------------------------------------
    public String toString ()
    {
-      return (acctNumber + "\t" + name + "\t" + fmt.format(balance));
+      return (acctNumber + "\t" + name + "\t\t" + fmt.format(balance));
    }
 
      //lockable methods----------------------------
@@ -154,9 +154,18 @@ public class Account implements Comparable
           //  This is the section   to implement interface Comparable
           // it compares the acctNumber
           //-----------------------------------------------------------------
-    public int compareTo (Object o)
+    public int compareTo (Object other)
     {
-            Account a = (Account)o;
+            //autoboxing
+            Account a = (Account) other;
+            
+            int result;
+            
+            /*
+            if (acctNumber == a.acctNumber)
+                result = acctNumber.compareTo(a.acctNumber);
+              
+                */
 
 
             return 0;

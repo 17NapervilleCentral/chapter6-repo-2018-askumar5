@@ -11,7 +11,6 @@ public class Coin
     /*
    private final int HEADS = 0;
    private final int TAILS = 1;
-
    private int face;
    private double amount;
    private char type;
@@ -38,7 +37,6 @@ public class Coin
    {
       face = (int) (Math.random() * 2);
    }
-
    /**-----------------------------------------------------------------
    *  Returns true if the current face of the coin is heads.
         @return boolean, true if heads
@@ -67,6 +65,12 @@ public class Coin
             
        return coinName;
     }
+    public String toString()
+    {
+      String output = "Penny: $0.01\nNickel: $0.05\nDime: $0.10\nQuarter: $0.25";
+      
+      return output;
+    }
     /*
    public double getValue ()
    {
@@ -84,6 +88,7 @@ public class Coin
        return value;
     }
     */
+   /*
    /**-----------------------------------------------------------------
    *  Returns the current face of the coin as a string.
         @return String
@@ -97,9 +102,9 @@ public class Coin
          faceName = "Heads";
       else
          faceName = "Tails";
-
       return faceName;
       
    }
    */
+  
 }

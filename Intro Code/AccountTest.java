@@ -4,7 +4,7 @@ public class AccountTest
   {
     //Address home = new Address("123 Maple Ave", "Naperville", "IL", 60540);
     
-    Account p1 = new Account("Homer Simpson", 1025, 1090.45, 1);
+    Account p1 = new Account("Julius Caesar", 1025, 1090.45, 1);
     Account p2 = new Account("Rjun Koomar", 1599, 721.42, 1);
     Account p3 = new Account("Cigar Morodia", 1564, 2354.23, 1);
     Account p4 = new Account("Kvn Hays", 1349, 3502.76, 1);
@@ -15,6 +15,7 @@ public class AccountTest
     Account p9 = new Account("Stick Figure", 3208, 1323.54, 1);
     Account p10 = new Account("Jeffrey Bezos", 4568, 9999.99, 1);
     
+    //initializer list
     Account[] people = {p1, p2, p3, p4, p5, p6, p7, p8, p9, p10};
     
     Account[] hash_array = new Account[2 * people.length];
@@ -26,6 +27,7 @@ public class AccountTest
     for (Account person: hash_array)
         System.out.println(person);
     
+    //i got two collisions in my hash table
     
 
   }
