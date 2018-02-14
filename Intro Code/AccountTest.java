@@ -1,3 +1,5 @@
+//Arjun Kumar
+
 public class AccountTest
 {
   public static void main(String[] args)
@@ -18,12 +20,23 @@ public class AccountTest
     //initializer list
     Account[] people = {p1, p2, p3, p4, p5, p6, p7, p8, p9, p10};
     
+    System.out.println("Here is the full array of Accounts, sorted by account number.");
+    //sorting using an insertion sort
+    Sorts.insertionSort(people);
+    for (Account person: people)
+        System.out.println(person);
+        
+    System.out.println("\n");
+    
+    //makes the hash array
     Account[] hash_array = new Account[2 * people.length];
     for (int i = 0; i < people.length; i++)
     {
+        //uses a for loop to add into the hash table using hash number
             hash_array[people[i].hash() % 20] = people[i];
     }
     
+    //prints out the hash_array
     for (Account person: hash_array)
         System.out.println(person);
     

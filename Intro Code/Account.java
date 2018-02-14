@@ -5,6 +5,8 @@
 //  and withdraw.
 //********************************************************************
 
+//Arjun Kumar
+
 import java.text.NumberFormat;
 
 public class Account implements Comparable
@@ -161,21 +163,21 @@ public class Account implements Comparable
             
             int result;
             
-            /*
             if (acctNumber == a.acctNumber)
-                result = acctNumber.compareTo(a.acctNumber);
-              
-                */
+                result = 0;
+            else if (acctNumber < a.acctNumber)
+                result = -1;
+            else //if acctNumber of this object is greater than that of the other object (a)
+                result = 1;
 
-
-            return 0;
+            return result;
     }
 
     /**
      * This calculates the hash number. First, the number is set to one and then multiplied by each number of each character in the Account's name.
      * Note: Absolute value of the number is taken to avoid a negative hash number.
      * Next, the account number is added to the number.
-     * Finally, one fifth of the balance is added to the number. This is the final hash_num
+     * Finally, one fifth of the balance is added to the number. This will be the final hash_num after modulused.
      */
     public int hash()
     {
@@ -189,12 +191,8 @@ public class Account implements Comparable
         hash_num += acctNumber; //add the account number
         int num = (int) balance / 5;
         hash_num += num;
-        /*
-        for (int i = 0; i < (balance / 5); i++)
-        {
-            hash_num += i;
-        }
-*/
+        
+        //modulus to make an 8-digit hash_number
         acctNumber = hash_num % 100000000; //makes the account an 8-digit version of the hash_number
         
         return hash_num;
